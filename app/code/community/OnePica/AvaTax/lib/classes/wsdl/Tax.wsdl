@@ -42,6 +42,7 @@
 					  <s:element minOccurs="1" maxOccurs="1" name="ExchangeRateEffDate" type="s:date" />
 					  <s:element minOccurs="1" maxOccurs="1" name="TaxDate" type="s:date" />
 					  <s:element minOccurs="1" maxOccurs="1" name="StatusDate" type="s:date" />
+                      <s:element minOccurs="1" maxOccurs="1" name="VatId" type="s:string" />
 				  </s:sequence>
 			  </s:extension>
 		  </s:complexContent>

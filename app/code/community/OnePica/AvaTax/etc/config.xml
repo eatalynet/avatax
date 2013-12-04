@@ -20,7 +20,7 @@
 <config>
     <modules>
         <OnePica_AvaTax>
-            <version>2.4.3.2</version>
+            <version>2.4.4</version>
         </OnePica_AvaTax>
     </modules>
     <global>
@@ -268,7 +268,9 @@
         		<action>0</action>
         		<url>https://avatax.avalara.net/</url>
         		<region_filter_mode>0</region_filter_mode>
+                <!--- new country codes added for GLOBAL addition -->
         		<country_filter_list>CA,US</country_filter_list>
+                <country_list>CA,US</country_list>
         		<log_status>1</log_status>
         		<log_lifetime>3</log_lifetime>
         		<queue_success_lifetime>7</queue_success_lifetime>

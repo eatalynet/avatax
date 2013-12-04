@@ -238,17 +238,19 @@ class OnePica_AvaTax_Model_Avatax_Address extends OnePica_AvaTax_Model_Abstract
 
 		//a valid address isn't required, but Avalara has to say there is 
 		//enough info to drill down to a tax jurisdiction to calc on
+        //@TODO rework for Global Addition
+
 		} elseif(!$isAddressValidationOn && $isQuoteActionable) {
-			if($result->isTaxable()) {
-				$this->_mageAddress->setAddressValidated(true);
-				return true;
-			} else {
-				$errors = array();
-				foreach ($result->getMessages() as $message) {
-					$errors[] = $this->__($message->getSummary());
-				}
-				return $errors;
-			}
+		//	if($result->isTaxable()) {
+		//		$this->_mageAddress->setAddressValidated(true);
+		//		return true;
+		//	} else {
+		//		$errors = array();
+		//		foreach ($result->getMessages() as $message) {
+		//			$errors[] = $this->__($message->getSummary());
+		//		}
+		//		return $errors;
+		//	}
 		}
 		
 		return true;

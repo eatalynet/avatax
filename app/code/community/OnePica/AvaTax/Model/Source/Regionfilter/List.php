@@ -32,7 +32,9 @@ class OnePica_AvaTax_Model_Source_Regionfilter_List
     public function toOptionArray($isMultiselect=false)
     {
         if (!$this->_options) {
-        	$countries = array('US', 'CA');
+            $allcountries = Mage::getStoreConfig('tax/avatax/country_list',Mage::app()->getStore());;
+            $countries = explode(',', $allcountries);
+
         	$this->_options = array();
         	
         	$this->_options[] = array(

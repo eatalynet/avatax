@@ -237,4 +237,25 @@ class OnePica_AvaTax_Model_Config extends Varien_Object
 	{
 		return $this->getConfig('company_code', $store);
 	}
+
+    /**
+     * Returns the company Global VAT ID
+     *
+     * @return string
+     */
+    public function getVatId ($store=null)
+    {
+        return $this->getConfig('vatid', $store);
+    }
+
+    /**
+     * Returns countries to be used in Global Tax
+     *
+     * @return string
+     */
+    public function getGlobalCountry ($store=null)
+    {
+        $this->getConfig('country_list', $store);
+        return array($this);
+    }
 }
