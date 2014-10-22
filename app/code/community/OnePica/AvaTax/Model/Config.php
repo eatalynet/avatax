@@ -243,9 +243,9 @@ class OnePica_AvaTax_Model_Config extends Varien_Object
      *
      * @return string
      */
-    public function getVatId ($store=null)
+    public function getBusinessIdentificationNo ($store=null)
     {
-        return $this->getConfig('vatid', $store);
+        return $this->getConfig('business_id', $store);
     }
 
     /**

@@ -39,7 +39,8 @@ class GetTaxResult // extends BaseResult
 	//Added new properties to upgrade to 5.3 interface
 	private $TotalTaxCalculated;	//decimal
 	private $TaxSummary;		//ArrayOfTaxDetail	
-	
+
+    private $BusinessIdentificationNo;
 	
     
 	 /**
@@ -252,8 +253,8 @@ class GetTaxResult // extends BaseResult
 	* @return array
 	*/
     public function getMessages() { return EnsureIsArray($this->Messages->Message); }
-    
-    
+
+    public function getBusinessIdentificationNo() { return $this->BusinessIdentificationNo; }
 
 
 

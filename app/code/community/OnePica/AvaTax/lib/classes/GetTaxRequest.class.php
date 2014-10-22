@@ -57,7 +57,7 @@ class GetTaxRequest
 
     //@author: gmills
     //Added new properties for Global Tax
-    private $VatId; 		// string
+    private $BusinessIdentificationNo;
 
 
 
@@ -237,7 +237,15 @@ class GetTaxRequest
 	 */
 	public function setDocCode($value) { $this->DocCode = $value; return $this; }				//string   invoice number
 
-	/**
+    /**
+     * Sets the Business code (VAT id, required if global required).
+     *
+     * @param string $value
+
+     */
+    public function setBusinessIdentificationNo($value) { $this->BusinessIdentificationNo = $value; return $this; }		//string
+
+    /**
 	 * The client application salesperson reference code.
 	 *
 	 * @param string $value
@@ -436,12 +444,12 @@ class GetTaxRequest
 
     //@author: gmills
     /**
-     * Sets the client application vat registration id.
+     * Sets the client application Business Identification Number.
      *
      * @param string $value
      *
      */
-    public function setVatId($value) { $this->VatId = $value; return $this; }			//string
+    public function getBusinessIdentificationNo() { return $this->BusinessIdentificationNo; }
 
 
 /**#@+
@@ -532,10 +540,6 @@ class GetTaxRequest
 	public function getTaxDate()  { return $this->TaxDate; }		//date
 	public function getStatusDate()  { return $this->StatusDate; }		//date
 
-    //@athor: gmills
-    public function getVatId() { return $this->VatId; }             //string
-	
-/**#@-*/
 	
 
 	

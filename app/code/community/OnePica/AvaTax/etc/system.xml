@@ -83,15 +83,15 @@
 							<show_in_website>1</show_in_website>
 							<show_in_store>1</show_in_store>
 						</company_code>
-                        <vatid translate="label">
-                            <label>VAT Registration ID</label>
-                            <comment>Required for global tax calculations.</comment>
+                        <business_id translate="label">
+                            <label>Business Identification Number</label>
+                            <comment>Required for global tax calculations (VAT).</comment>
                             <frontend_type>text</frontend_type>
                             <sort_order>60</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
-                        </vatid>
+                        </business_id>
                         <country_list>
                             <label>Taxable Country</label>
                             <comment>Use only TLD country codes.</comment>

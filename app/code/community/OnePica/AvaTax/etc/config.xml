@@ -269,8 +269,8 @@
         		<url>https://avatax.avalara.net/</url>
         		<region_filter_mode>0</region_filter_mode>
                 <!--- new country codes added for GLOBAL addition -->
-        		<country_filter_list>CA,US</country_filter_list>
-                <country_list>CA,US</country_list>
+        		<country_filter_list>CA,US,DE</country_filter_list>
+                <country_list>US,CA,DE</country_list>
         		<log_status>1</log_status>
         		<log_lifetime>3</log_lifetime>
         		<queue_success_lifetime>7</queue_success_lifetime>

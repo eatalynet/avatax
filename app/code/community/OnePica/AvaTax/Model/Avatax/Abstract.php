@@ -87,6 +87,7 @@ abstract class OnePica_AvaTax_Model_Avatax_Abstract extends OnePica_AvaTax_Model
 		$this->_setCompanyCode($storeId);
         $this->_request->setDetailLevel(DetailLevel::$Document);
         $this->_request->setDocDate(date('Y-m-d'));
+        $this->_request->setBusinessIdentificationNo(Mage::getStoreConfig('tax/avatax/business_id', $storeId));
         $this->_request->setExemptionNo('');
     	$this->_request->setDiscount(0.00); //cannot be used in Magento
     	$this->_request->setSalespersonCode(Mage::helper('avatax')->getSalesPersonCode($storeId));
